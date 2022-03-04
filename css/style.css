@@ -1,0 +1,87 @@
+:root {
+    --navbar-color: #4258a3;
+    --background-color: #e3e0cf;
+    --primary-color: #ffffff;
+    --secondary-color: #c5cbe3;
+    --secondary-color: #8fa8a3;
+    --secondary-color: #f7b942;
+    --scroll-bar-color: #6f8883;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    background-color: var(--background-color);
+    height: 100%;
+}
+
+body {
+    overflow: overlay;
+}
+
+/* Navbar */
+nav {
+    position: fixed;
+    top: 0;
+    background-color: var(--navbar-color);
+    width: 100%;
+    overflow: hidden;
+    padding: 30px;
+}
+
+nav img {
+    height: 50%;
+    position: absolute;
+    top: 25%;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    float: right;
+}
+
+nav li {
+    padding: 0 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--background-color);
+    text-transform: lowercase;
+}
+
+nav a:hover {
+    color: var(--secondary-color);
+}
+
+/* Whitespace */
+.whitespace1, .whitespace2 {
+    height: 100%;
+}
+
+.whitespace1 {
+    background-color: #dddddd;
+}
+
+.whitespace2 {
+    background-color: #d5d5d5;
+}
+
+/* Scrollbar */
+body::-webkit-scrollbar {
+    width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+    background: rgba(0,0,0,0);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--scroll-bar-color);
+    border-radius: 20px;
+}
