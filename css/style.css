@@ -57,10 +57,22 @@ nav li a {
     text-decoration: none;
     color: var(--background-color);
     text-transform: lowercase;
+    font-size: 18px;
 }
 
 nav li a:hover {
     color: var(--secondary-color);
+}
+
+.button {
+    background-color: #00000000;
+    padding: 8px 15px;
+    border-radius: 8px;
+    border: 2px solid var(--background-color);
+}
+
+.button:hover {
+    border: 2px solid var(--secondary-color);
 }
 
 /* Whitespace */
