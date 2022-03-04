@@ -6,6 +6,7 @@
     --secondary-color: #8fa8a3;
     --secondary-color: #f7b942;
     --scroll-bar-color: #6f8883;
+    --highlight-color: #0000ff;
 }
 
 * {
@@ -25,6 +26,10 @@ body {
 
 img {
     user-select: none;
+}
+
+.highlight {
+    color: var(--highlight-color);
 }
 
 /* Navbar */
@@ -75,16 +80,60 @@ nav li a:hover {
 }
 
 /* Whitespace */
-.whitespace1, .whitespace2 {
-    height: 100%;
-}
-
 .whitespace1 {
+    height: 100%;
     background-color: #dddddd;
 }
 
-.whitespace2 {
-    background-color: #d5d5d5;
+/* About */
+.about {
+    background-color: var(--background-color);
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 10% 25%;
+}
+
+.top {
+    width: 100%;
+}
+
+.about .left {
+    flex: 3;
+    margin-right: 10px;
+}
+
+.about .right {
+    margin-left: 10px;
+    flex:  2;
+}
+
+.about h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.about p {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.about img {
+    height: 100%;
+    width: 100%;
+    background-color: var(--navbar-color);
+}
+
+/* Projects */
+.projects {
+    height: 100%;
+    background-color: var(--secondary-color);
+}
+
+/* Contact */
+.contact {
+    height: 100%;
+    background-color: var(--background-color);
 }
 
 /* Scrollbar */
