@@ -1,12 +1,11 @@
 :root {
-    --navbar-color: #4258a3;
-    --background-color: #e3e0cf;
-    --primary-color: #ffffff;
-    --secondary-color: #c5cbe3;
-    --secondary-color: #8fa8a3;
-    --secondary-color: #f7b942;
-    --scroll-bar-color: #6f8883;
-    --highlight-color: #0000ff;
+    --primary-text: #ccd6f6;
+    --secondary-text: #8892b0;
+    --background-color: #0a192f;
+    --highlight-color: #52d2b9;
+    --highlight-color2: #52d2b933;
+    --navbar-color: var(--background-color);
+    --scroll-bar-color: var(--secondary-text);
 }
 
 * {
@@ -30,6 +29,32 @@ img {
 
 .highlight {
     color: var(--highlight-color);
+}
+
+h2 {
+    color: var(--primary-text);
+}
+
+p {
+    color: var(--secondary-text);
+    font-size: 1.2em;
+}
+
+li {
+    color: var(--secondary-text);
+}
+
+.button {
+    padding: 8px 15px;
+    border-radius: 8px;
+    border: 2px solid var(--highlight-color);
+    text-decoration: none;
+    color: var(--highlight-color);
+}
+
+.button:hover {
+    border: 2px solid var(--highlight-color);
+    background-color: var(--highlight-color2);
 }
 
 /* Navbar */
@@ -58,31 +83,54 @@ nav li {
     padding: 0 30px;
 }
 
-nav li a {
+nav li .nav-links {
     text-decoration: none;
-    color: var(--background-color);
+    color: var(--secondary-text);
     text-transform: lowercase;
-    font-size: 18px;
+    font-size: 1.2em;
 }
 
 nav li a:hover {
-    color: var(--secondary-color);
+    color: var(--highlight-color);
 }
 
-.button {
-    padding: 8px 15px;
-    border-radius: 8px;
-    border: 2px solid var(--background-color);
+nav .button {
+    text-transform: lowercase;
+    font-size: 1.2em;
 }
 
-.button:hover {
-    border: 2px solid var(--secondary-color);
-}
-
-/* Whitespace */
-.whitespace1 {
+/* Landing Page */
+.landing-page {
     height: 100%;
-    background-color: #dddddd;
+    background-color: var(--background-color);
+    display: flex;
+    flex-flow: column;
+    padding: 10% 20%;;
+}
+
+.landing-page .introduction {
+    color: var(--highlight-color);
+}
+
+.landing-page .name {
+    color: var(--primary-text);
+}
+
+.landing-page h1 {
+    font-size: 4.4em;
+    color: var(--secondary-text);
+}
+
+.landing-page p {
+    color: var(--secondary-text);
+    margin: 20px 0;
+    max-width: 50%;
+}
+
+.landing-page .button {
+    max-width: min-content;
+    white-space: nowrap;
+    margin-top: 20px;
 }
 
 /* About */
