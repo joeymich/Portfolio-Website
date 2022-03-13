@@ -38,7 +38,7 @@ h2 {
 
 h3 {
     color: var(--primary-text);
-    font-size: 1.5em;
+    font-size: 1.3em;
 }
 
 p {
@@ -52,7 +52,7 @@ li {
 
 .button {
     padding: 8px 15px;
-    border-radius: 8px;
+    border-radius: 4px;
     border: 2px solid var(--highlight-color);
     text-decoration: none;
     color: var(--highlight-color);
@@ -71,6 +71,7 @@ nav {
     width: 100%;
     overflow: hidden;
     padding: 30px;
+    z-index: 1;
 }
 
 nav img {
@@ -136,7 +137,8 @@ nav .button {
 .landing-page .button {
     max-width: min-content;
     white-space: nowrap;
-    margin-top: 20px;
+    margin-top: 40px;
+    padding: 15px 30px;
 }
 
 /* About */
@@ -145,7 +147,7 @@ nav .button {
     height: 100%;
     display: flex;
     flex-flow: row wrap;
-    padding: 10% 25%;
+    padding: 5% 25%;
 }
 
 .top {
@@ -182,10 +184,17 @@ nav .button {
 .projects-section {
     height: 100%;
     background-color: var(--secondary-color);
-    padding: 10% 20%;
+    padding: 5% 20%;
+    text-align: center;
+}
+
+.projects-section h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
 }
 
 .portfolio {
+    text-align: left;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -197,6 +206,7 @@ nav .button {
     width: 300px;
     margin: 8px;
     padding: 15px;
+    border-radius: 4px;
 }
 
 .project h3 {
@@ -205,13 +215,14 @@ nav .button {
 
 .project p {
     margin-top: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 45px;
+    font-size: 1em;
 }
 
 .project ul {
     list-style: none;
     position: absolute;
-    bottom: 15px;
+    bottom: 20px;
 }
 
 .project li {
